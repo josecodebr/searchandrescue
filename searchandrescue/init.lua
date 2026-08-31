@@ -1,9 +1,16 @@
 searchandrescue = {}
-dofile(minetest.get_modpath("searchandrescue") .. DIR_DELIM .. "helicoptero.lua")
-dofile(minetest.get_modpath("searchandrescue") .. DIR_DELIM .. "fire_truck.lua")
-dofile(minetest.get_modpath("searchandrescue") .. DIR_DELIM .. "recipe.lua")
-dofile(minetest.get_modpath("searchandrescue") .. DIR_DELIM .. "searchandrescue_objects/rope.lua")
-dofile(minetest.get_modpath("searchandrescue") .. DIR_DELIM .. "searchandrescue_itens/itens.lua")
 
-dofile(minetest.get_modpath("searchandrescue") .. DIR_DELIM .. "cargas.lua/cargas.lua")
+local modpath = minetest.get_modpath(minetest.get_current_modname())
 
+local files = {
+    "helicoptero.lua",
+    "fire_truck.lua",
+    "recipe.lua",
+    "searchandrescue_objects/rope.lua",
+    "searchandrescue_itens/itens.lua",
+    "cargas/cargas.lua", -- Corrigido o caminho da pasta
+}
+
+for _, file in ipairs(files) do
+    dofile(modpath .. "/" .. file)
+end
