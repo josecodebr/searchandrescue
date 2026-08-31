@@ -1,38 +1,73 @@
-<div>
-  <h1>modpack search and rescue</h1>
-This is a pack of mods to use in search and rescue of vehicles in a difficult situation to recover,</br>
-once the vehicle is found, the player can pick it up and bring it back to base safely,</br>
-other features are being implemented in the mod</br>
-</div>
+# 🚁 Modpack Search and Rescue & Factory Mine
 
-<div>
-<h2>how to use</h2>
-First you must get the game resources to make your helicopter</br>
-right-clicking on the helicopter will bring the player into a resource form, containing the following resources</br>
+This modpack adds vehicle manufacturing and complex Search and Rescue (SAR) missions to Luanti / Minetest. Players can construct, pilot, and operate tactical rescue helicopters equipped with towing ropes, specialized cameras, and rescue tools to locate and retrieve stranded vehicles in challenging terrain.
 
- 👉 close button: to close the form</br>
- 👉 exit button to: exit vehicle</br>
- 👉 cam_set to button: choose cameras</br>
- 👉 button tools: to use the rescue tools</br>
+---
 
-To do the rescue on the map the vehicle will live on a long rope that can be used to tow other objects.</br>
-  the game has 5 cameras to help you view the rescue from a better angle</br>
-</div>
+## 🚨 Overview & Features
 
-<div>
-In this mod the helicopter uses most of the mod code <a href="https://github.com/Desour/helicopter">Desour/helicopter<a>,</br>
-   this version will be patched and will continue to use this code as the previous forck</br>
- </div>
- 
-<img src="https://github.com/josegamestest/searchandrescue/blob/main/screenshot.png">
- 
- <div>
-    It is now possible to build a vehicle development center<br>
-    the project is handmade, however it is a machine that will manufacture it
-</div>
+* 🛠️ **Vehicle Manufacturing:** Build and automate your fleet using the Factory Mine system.
+* 🚁 **Advanced Rescue Helicopter:** Based on the `Desour/helicopter` physics core, enhanced with full 3D vector calculations (`matrix.lua`) for realistic roll and pitch maneuvers.
+* 🪢 **Towing & Recovery:** Deploy long rescue ropes directly from the helicopter to tow lost or stranded vehicles back to safety.
+* 📹 **Multi-Camera Angles:** Switch between **5 distinct camera views** for precise situational awareness during recovery operations.
+* 💡 **Tactical Miner Light:** Equip dynamic hand lights to illuminate dark areas temporarily during ground search operations.
 
-<div>
-<h2>❗Attention</h2>
- mod under development and may contain some bugs<br>
- It is important to test and evaluate the mod yourself, any decision to put it on the server should be the sole responsibility of the person who purchased the mod.
-<div>
+---
+
+## 📖 Guia de Operação e Gameplay
+
+### 1. Centro de Desenvolvimento & Produção (Factory Mine)
+> **Nota de Servidor:** No momento, a **Fábrica de Veículos** (`factory_mine:factory`) está disponível no **Modo Criativo** ou via comando de administração (`/giveme factory_mine:factory`) para garantir a estabilidade do servidor.
+
+1. Posicione o nó da **Fábrica de Veículos** no chão.
+2. A estrutura ativará automaticamente **4 luminárias industriais de canto** e convocará o **Robô Operário** para supervisionar a área.
+3. Abra a interface da fábrica (botão direito), insira o item de montagem (ex: `searchandrescue:heli`) no slot de **Entrada**.
+4. O *Node Timer* processará o item e fará o **spawn automático do Helicóptero** sobre a plataforma, atualizando o contador *"Total Produzido"*.
+
+---
+
+### 2. Pilotagem e Operação do Helicóptero
+
+#### Embarque, Desembarque e Interface
+* **Entrar no Veículo:** Aproxime-se do helicóptero e clique com o **botão direito**.
+* **Interface de Controle (Formspec):** Ao entrar ou clicar com o botão direito no helicóptero, uma interface será exibida com as opções:
+  * ❌ **Close:** Fecha o painel de interface.
+  * 🚪 **Exit / Desembarque:** Sai do veículo (também acessível via teclas **`E`** ou **`F`**).
+  * 📹 **Cam Set:** Alterna entre as **5 câmeras disponíveis** para facilitar manobras e resgates.
+  * 🛠️ **Tools:** Abre as ferramentas táticas de resgate.
+
+#### Controles de Voo
+* **Subir / Decolar:** Tecla de Pulo (`Espaço`)
+* **Descer / Pousar:** Tecla de Agachar (`Shift`)
+* **Acelerar / Inclinar para Frente:** Tecla Ir para Frente (`W`)
+* **Girar / Direção:** Teclas Esquerda / Direita (`A` / `D`)
+
+#### Operação de Resgate (Towing System)
+* Utilize a **corda longa de resgate** integrada ao helicóptero para prender e rebocar veículos encontrados no mapa de volta à base.
+
+---
+
+### 3. Manutenção e Remoção
+
+* **Robô Operário:** Atua como unidade fixa da fábrica, sendo imune a socos ou ataques dos jogadores.
+* **Desmontagem da Fábrica:** Esvazie o inventário da fábrica antes de quebrá-la. A remoção do bloco central limpa automaticamente o robô e as luzes periféricas do mapa.
+* **Recolher Helicóptero:** Para recolher um helicóptero de volta ao inventário em forma de item, certifique-se de estar fora do veículo e dê um soco (*Punch*) nele.
+
+---
+
+## 💡 Itens Utilitários
+
+* **Lanterna Tática de Minerador (`factory_mine:hand_light`):** Item de mão que projeta um ponto de iluminação temporário por 5 segundos no local apontado pelo jogador. Ideal para exploração e resgates noturnos.
+
+---
+
+## 📜 Credits & Codebase
+
+This modpack utilizes and patches code from the [Desour/helicopter](https://github.com/Desour/helicopter) project, maintaining backwards compatibility and continuously improving vehicle interaction mechanics.
+
+---
+
+## ❗ Attention & Server Notice
+
+> **Mod under active development.** It may contain minor bugs.  
+> Please test and evaluate the mod locally before deploying it to production servers. Any decision to use this mod on a live server is the sole responsibility of the server administrator.
