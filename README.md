@@ -52,13 +52,6 @@ This modpack adds vehicle manufacturing and complex Search and Rescue (SAR) miss
 * **Robô Operário:** Atua como unidade fixa da fábrica, sendo imune a socos ou ataques dos jogadores.
 * **Desmontagem da Fábrica:** Esvazie o inventário da fábrica antes de quebrá-la. A remoção do bloco central limpa automaticamente o robô e as luzes periféricas do mapa.
 * **Recolher Helicóptero:** Para recolher um helicóptero de volta ao inventário em forma de item, certifique-se de estar fora do veículo e dê um soco (*Punch*) nele.
-
----
-
-## 💡 Itens Utilitários
-
-* **Lanterna Tática de Minerador (`factory_mine:hand_light`):** Item de mão que projeta um ponto de iluminação temporário por 5 segundos no local apontado pelo jogador. Ideal para exploração e resgates noturnos.
-
 ---
 
 ## 📜 Credits & Codebase
