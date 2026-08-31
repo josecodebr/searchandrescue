@@ -1,3 +1,4 @@
+--matrix.lua
 -- everything in this file is licensed under CC0
 -- see also minetest PR #8515
 
