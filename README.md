@@ -3,7 +3,7 @@
 This modpack adds vehicle manufacturing and complex Search and Rescue (SAR) missions to Luanti / Minetest. Players can construct, pilot, and operate tactical rescue helicopters equipped with towing ropes, specialized cameras, and rescue tools to locate and retrieve stranded vehicles in challenging terrain.
 
 ---
-
+![plot](https://github.com/josecodebr/searchandrescue/blob/main/screenshot.png)
 ## 🚨 Overview & Features
 
 * 🛠️ **Vehicle Manufacturing:** Build and automate your fleet using the Factory Mine system.
